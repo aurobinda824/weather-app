@@ -12,7 +12,7 @@ class Daily extends Component
 
     componentDidUpdate(prevProps, prevState)
     {
-        if (prevProps.lat != this.props.lat)
+        if (prevProps.lat !== this.props.lat)
         {
             //fetch data
             fetch("http://api.weatherapi.com/v1/forecast.json?key=033eee285fa04f66b9a154233240807&q=" + this.props.lat + ',' + this.props.lon + "&days=7")
@@ -38,7 +38,7 @@ class Daily extends Component
             {
                 ListItems.push(
                     <div key={i} className='box'>
-                        <img src={this.state.daily[i]['day']['condition']['icon']} />
+                        <img src={this.state.daily[i]['day']['condition']['icon']} alt='img' />
                         <p style={{textAlign:'center'}}>{this.state.daily[i]['day']['condition']['text']}</p>
                         <p><b>Temp: </b> {this.state.daily[i]['day']['maxtemp_c']}°C - {this.state.daily[i]['day']['mintemp_c']}°C</p>
                         <p><b>Chance of Rain: </b>{this.state.daily[i]['day']['daily_chance_of_rain']}</p>

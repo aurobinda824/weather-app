@@ -33,7 +33,7 @@ class WeatherData extends Component
     {
         if (prevProps.Data !== this.props.Data)
         {
-            if (typeof this.props.Data['current'] != 'undefined' && typeof this.props.Data['location'] != 'undefined')
+            if (typeof this.props.Data['current'] !== 'undefined' && typeof this.props.Data['location'] !== 'undefined')
             {
                 this.setState({
                     condition : this.props.Data['current']['condition'],
@@ -55,7 +55,7 @@ class WeatherData extends Component
 
     getImageUrl(img)
     {
-        if (typeof img == 'undefined')
+        if (typeof img === 'undefined')
         {
             return ''
         }
@@ -64,7 +64,7 @@ class WeatherData extends Component
 
     getEmojiTemp(temp)
     {
-        if (temp == '')
+        if (temp === '')
         {
             return ''
         }
@@ -81,7 +81,7 @@ class WeatherData extends Component
 
     getWindInfo(wind)
     {
-        if (wind == '')
+        if (wind === '')
         {
             return ''
         }
@@ -110,7 +110,7 @@ class WeatherData extends Component
 
     getHumidityInfo(x)
     {
-        if (x == '')
+        if (x === '')
         {
             return ['', '']
         }

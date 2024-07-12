@@ -42,7 +42,7 @@ class Hours extends Component
             {
                 ListItems.push(<div key={i} className="box">
                     <p className="t" style={{fontWeight:'bold'}}>{this.state.hourly[i]['time'].slice(10, 16)}</p>
-                    <img src={this.state.hourly[i]['condition']['icon']} />
+                    <img src={this.state.hourly[i]['condition']['icon']} alt="img"/>
                     <p className="t" style={{fontWeight:'bold'}}>{this.state.hourly[i]['temp_c']}°C</p>
                 </div>)
             }

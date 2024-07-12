@@ -24,7 +24,7 @@ class App extends Component
 
   componentDidUpdate(prevProps, prevState)
   {
-    if (prevState.city != this.state.city)
+    if (prevState.city !== this.state.city)
     {
       setInterval(this.getLocationInfo(), 1000 * 3600)
     }

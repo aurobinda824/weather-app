@@ -21,7 +21,7 @@ class Location extends Component
         this.setState({
             city: this.props.cityName
         })
-        if (this.state.city == '')
+        if (this.state.city === '')
         {
             this.getCurrentLocationIP()
         }
@@ -29,7 +29,7 @@ class Location extends Component
 
     componentDidUpdate(prevProps)
     {
-        if (prevProps.cityName != this.props.cityName)
+        if (prevProps.cityName !== this.props.cityName)
         {
             this.setState({
                 city: this.props.cityName
