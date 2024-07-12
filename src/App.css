@@ -1,0 +1,170 @@
+.header input
+{
+    height: 30px;
+    width: 250px;
+    border-radius: 10px;
+    background-color: rgb(229, 228, 225);
+    margin: 1%;
+    margin-bottom: 0;
+    margin-left: 10%;
+}
+
+.header button
+{
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(36, 162, 36);
+}
+
+.sec
+{
+    background-color: aliceblue;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 1%;
+}
+
+.cloc
+{
+    padding: 1%;
+    margin-top: 2%;
+}
+
+.cloc .t-city
+{
+    font-size: 30px;
+    font-weight: 600;
+    padding:0;
+    margin:0;
+}
+
+.cloc .t-city-rc
+{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0;
+    margin: 10px;
+}
+
+.we-data .t
+{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.we-data .container
+{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.we-data .box
+{
+    background-color: rgb(189, 237, 237);
+    display: block;
+    min-height: 200px;
+    min-width: 200px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 5px auto;
+    margin-top: 0;
+}
+
+.we-data .box .condition
+{
+    height: 100px;
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-bottom: 0;
+}
+
+.we-data .box .p
+{
+    margin-top:0;
+    text-align: center;
+    font-size: 20px;
+}
+
+.we-data .box .temp
+{
+    margin-top: 50px;
+}
+
+.we-data .box .emoji
+{
+    text-align: center;
+    margin-top: 0;
+    font-size: 50px;
+}
+
+.we-data .w
+{
+    text-align: center;
+}
+
+.hours .w
+{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.hours .container
+{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hours .container .box
+{
+    background-color: rgb(189, 237, 237);
+    width: 100px;
+    height: 150px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.hours .t
+{
+    margin-top: 10px;
+    padding: 0;
+    text-align: center;
+}
+
+.hours .container .box img
+{
+    margin-left: 10%;
+    margin-bottom: 0;
+}
+
+.daily .container
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.daily .container .box
+{
+    background-color: rgb(189, 237, 237);
+    width: 200px;
+    height: 250px;
+    margin: 5px auto;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.daily .container .box img
+{
+    margin-left: 30%;
+}
