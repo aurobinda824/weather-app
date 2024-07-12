@@ -148,7 +148,7 @@ class WeatherData extends Component
                 <p className="t">WeatherData</p>
                 <div className="container">
                     <div className="box">
-                        <img className="condition" src={this.getImageUrl(this.state.condition['icon'])}></img>
+                        <img className="condition" src={this.getImageUrl(this.state.condition['icon'])} alt="img"></img>
                         <p className="p t">{this.state.condition['text']}</p>
                     </div>
                     <div className="box">
