@@ -15,7 +15,7 @@ class Daily extends Component
         if (prevProps.lat !== this.props.lat)
         {
             //fetch data
-            fetch("http://api.weatherapi.com/v1/forecast.json?key=033eee285fa04f66b9a154233240807&q=" + this.props.lat + ',' + this.props.lon + "&days=7")
+            fetch("https://api.weatherapi.com/v1/forecast.json?key=033eee285fa04f66b9a154233240807&q=" + this.props.lat + ',' + this.props.lon + "&days=7")
                 .then(response => response.json())
                 .then(data => this.setState({daily : data['forecast']['forecastday']}))
                 .catch(error => console.log(error))
