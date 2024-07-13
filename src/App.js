@@ -32,8 +32,7 @@ class App extends Component
   
   getLocationInfo()
   {
-      const locAPI = 'https://api.weatherapi.com/v1/current.json?key=033eee285fa04f66b9a154233240807&q=' + this.state.city
-      fetch(locAPI)
+      fetch("https://api.weatherapi.com/v1/current.json?key=033eee285fa04f66b9a154233240807&q=" + this.state.city)
           .then(response => {return response.json()})
           .then(data => {
             this.setState({

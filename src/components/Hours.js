@@ -15,9 +15,10 @@ class Hours extends Component
     {
         fetch("https://api.weatherapi.com/v1/forecast.json?key=033eee285fa04f66b9a154233240807&q=" + this.props.lat + ',' + this.props.lon + "&days=1")
             .then(response => response.json())
-            .then(data => this.setState({
+            .then(data => {console.log(data)
+                this.setState({
                 hourly: data['forecast']['forecastday'][0]['hour']
-            }))
+            })})
             .catch(error => console.log(error))
     }
 

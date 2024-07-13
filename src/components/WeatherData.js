@@ -59,7 +59,7 @@ class WeatherData extends Component
         {
             return ''
         }
-        return img
+        return img['icon']
     }
 
     getEmojiTemp(temp)
@@ -141,6 +141,15 @@ class WeatherData extends Component
         return ['Extremely Humid', "Almost unbearable, extremely humid air"]
     }
 
+    isValid(x)
+    {
+        if (typeof x == 'undefined')
+        {
+            return ''
+        }
+        return x['text']
+    }
+
     render()
     {
         return (
@@ -148,8 +157,8 @@ class WeatherData extends Component
                 <p className="t">WeatherData</p>
                 <div className="container">
                     <div className="box">
-                        <img className="condition" src={this.getImageUrl(this.state.condition['icon'])} alt="img"></img>
-                        <p className="p t">{this.state.condition['text']}</p>
+                        <img className="condition" src={this.getImageUrl(this.state.condition)} alt="img"></img>
+                        <p className="p t">{this.isValid(this.state.condition)}</p>
                     </div>
                     <div className="box">
                         <p className="p t temp">{this.state.temp}°C</p>
