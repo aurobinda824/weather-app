@@ -32,9 +32,9 @@ class Daily extends Component
     getComponent()
     {
         const ListItems = []
-        if (typeof this.state.daily !== 'undefined' )
+        if (typeof this.state.daily[0] !== 'undefined' )
         {
-            for (let i = 0; i < 7; i++)
+            for (let i = 0; i < this.state.daily.length ; i++)
             {
                 ListItems.push(
                     <div key={i} className='box'>
